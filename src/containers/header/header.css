@@ -1,0 +1,31 @@
+.me__header {
+    display: flex;
+    height: 70vh;
+}
+
+.me__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.me__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: .1em;
+}
+
+.me__header-content p {
+    font-family: var(--font-family-header);
+    color: #555;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 5rem;
+    letter-spacing: .1em;
+}
