@@ -2,7 +2,6 @@ import React from "react";
 import {
   Typography,
   Button,
-  Box,
   Input,
   Grid,
   Container,
@@ -10,13 +9,7 @@ import {
   TextareaAutosize,
   Stack,
 } from "@mui/material";
-import {
-  PhotoCamera,
-  AcUnit,
-  PlayCircleFilled,
-  Mail,
-  Phone,
-} from "@mui/icons-material";
+import { AcUnit, PlayCircleFilled, Mail, Phone } from "@mui/icons-material";
 import "./footer.css";
 
 const highlights = [
@@ -155,24 +148,24 @@ const Footer = () => {
           <Stack item xs={12} sm={12} md={6} lg={2}>
             <Typography variant="h5">Quick links</Typography>
 
-            <a href="#">About Us</a>
+            <a href="api.hephzibahworld.com">About Us</a>
 
-            <a href="#">Our Location</a>
+            <a href="api.hephzibahworld.com">Our Location</a>
 
-            <a href="#">E-store</a>
+            <a href="api.hephzibahworld.com">E-store</a>
 
-            <a href="#">Give</a>
+            <a href="api.hephzibahworld.com">Give</a>
 
-            <a href="#">Blog</a>
+            <a href="api.hephzibahworld.com">Blog</a>
 
-            <a href="#">Testimony</a>
+            <a href="api.hephzibahworld.com">Testimony</a>
           </Stack>
           <Stack lineHeight={2} item xs={12} sm={12} md={6} lg={2}>
             <Typography variant="h5">Service Days</Typography>
 
-            <a href="#">Sunday</a>
+            <a href="api.hephzibahworld.com">Sunday</a>
 
-            <a href="#">Wednesdays</a>
+            <a href="api.hephzibahworld.com">Wednesdays</a>
           </Stack>
 
           <Grid item xs={12} sm={12} md={6} lg={4} justify="space-between">
