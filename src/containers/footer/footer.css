@@ -1,0 +1,16 @@
+footer{
+    font-family: var(--font-family);
+    min-height: 100vh;
+    height: 100vh;
+    padding: 3em 2em 3em 2em;
+}
+
+.me__flex-con {
+    gap: .7em;
+}
+.me__contact_us_input{
+    padding: .7em;
+    border-radius: 5px;
+}
+
+
