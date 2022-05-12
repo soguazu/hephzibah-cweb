@@ -2,150 +2,53 @@ import React from "react";
 import {
   Typography,
   Button,
-  Input,
   Grid,
   Container,
-  FormControl,
   TextareaAutosize,
   Stack,
+  TextField,
+  Box,
 } from "@mui/material";
-import { AcUnit, PlayCircleFilled, Mail, Phone } from "@mui/icons-material";
+import { Mail, Phone } from "@mui/icons-material";
 import "./footer.css";
-
-const highlights = [
-  " Divine rest is possible",
-  "  Divine rest is possible",
-  " Divine rest is possible",
-  " Divine rest is possible",
-];
 
 const Footer = () => {
   return (
     <footer>
       <Container
-        sx={{ bgcolor: "#d50000" }}
-        padding="normal"
-        margin="normal"
-        maxWidth="100%"
+        className="me__sub_footer_con"
+        minWidth="100%"
+        height="auto"
+        minHeight="100vh"
       >
-        <Grid
-          container
-          spacing={2}
-          padding="normal"
-          gap={1}
-          sx={{ bgcolor: "#d50000", padding: "20px" }}
-          justifyContent="center"
-          maxWidth="xl"
-          margin="normal"
-          direction="row"
-        >
-          {highlights.map((highlight) => {
-            return (
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={2}
-                xl={2}
-                zeroMinWidth
-                paddingBottom={2}
-                sx={{ border: 1, bgcolor: "white" }}
-              >
-                <AcUnit></AcUnit>
-                <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-                  {highlight}
-                </Typography>
-                <Typography variant="body2">
-                  A sermon by pastor Uzezi Atagbaza{" "}
-                </Typography>
-                <Typography paddingTop="20px">
-                  Sunday message
-                  <Button
-                    sx={{
-                      borderRadius: "100px",
-                      height: "30px",
-                      width: "30px",
-                      alignSelf: "right",
-                    }}
-                    variant="outlined"
-                    color="error"
-                  >
-                    <PlayCircleFilled color="red"></PlayCircleFilled>
-                  </Button>
-                </Typography>
-              </Grid>
-            );
-          })}
-        </Grid>
-      </Container>
-
-      <Container
-        sx={{
-          bgcolor: "text.disabled",
-          padding: "20px",
-          marginBottom: "20px",
-        }}
-        alignItems="center"
-        maxWidth="100%"
-      >
-        <Stack width="100%" justifyContent="center" alignItems="center">
-          <Typography sx={{ textAlign: "center" }} variant="h5">
-            SUBSCRIBE TO OUR NEWSLETTER
-          </Typography>
-          <Typography sx={{ textAlign: "center" }}>
-            Recieve email updates from Hephzibah Word Apostolic Center.<br></br>
-            We keep you in loop so you dont miss a thing
-          </Typography>
+        <Grid className="me__footer-grid" container gap={10}>
           <Stack
-            direction={{ xs: "column", md: "row" }}
-            justifyContent="center"
-            alignItems="center"
-            spacing={1}
-            sx={{
-              marginTop: "20px",
-            }}
+            className=".me__flex-con"
+            spacing="0.7em"
+            xs={12}
+            sm={12}
+            md={6}
+            lg={2}
           >
-            <Input
-              required
-              sx={{
-                bgcolor: "#e0f7fa",
-                padding: "10px",
-                borderRadius: "5px",
-                width: "400px",
-              }}
-              type="email"
-              placeholder="Email Address"
-            ></Input>
-
-            <Button
-              type="submit"
-              sx={{
-                borderRadius: "10px",
-                width: "200px",
-                marginLeft: "10px",
-              }}
-              variant="outlined"
-              color="error"
-            >
-              Subscribe
-            </Button>
-          </Stack>
-        </Stack>
-      </Container>
-      <Container marginBottom={2}>
-        <Grid container gap={3}>
-          <Stack item xs={12} sm={12} md={6} lg={2}>
             <Typography>
-              <Mail /> Hephzibahword@gmail.com
+              <Stack direction="row">
+                <Mail />
+                <Box component="span" sx={{ paddingLeft: "0.5em" }}>
+                  Hephzibahword@gmail.com
+                </Box>
+              </Stack>
             </Typography>
 
             <Typography>
-              <Phone />
-              080123456789
+              <Stack direction="row">
+                <Phone />
+                <Box component="span" sx={{ paddingLeft: "0.5em" }}>
+                  080123456789
+                </Box>
+              </Stack>
             </Typography>
           </Stack>
-          <Stack item xs={12} sm={12} md={6} lg={2}>
+          <Stack className="me__flex-con" item xs={12} sm={12} md={6} lg={2}>
             <Typography variant="h5">Quick links</Typography>
 
             <a href="api.hephzibahworld.com">About Us</a>
@@ -160,7 +63,7 @@ const Footer = () => {
 
             <a href="api.hephzibahworld.com">Testimony</a>
           </Stack>
-          <Stack lineHeight={2} item xs={12} sm={12} md={6} lg={2}>
+          <Stack className="me__flex-con" item xs={12} sm={12} md={6} lg={2}>
             <Typography variant="h5">Service Days</Typography>
 
             <a href="api.hephzibahworld.com">Sunday</a>
@@ -168,31 +71,44 @@ const Footer = () => {
             <a href="api.hephzibahworld.com">Wednesdays</a>
           </Stack>
 
-          <Grid item xs={12} sm={12} md={6} lg={4} justify="space-between">
+          <Grid
+            className="me__flex-con"
+            minWidth="1em"
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            lg={4}
+            gap={4}
+          >
             <Typography variant="h5">Contact Us</Typography>
-            <FormControl lineHeight={2}>
-              <Stack spacing={2}>
-                <Input type="text" variant="outlined" placeholder="Fullname" />
-                <Input
-                  variant="outlined"
-                  type="email"
-                  placeholder="Email Address"
-                />
-                <TextareaAutosize
-                  variant="outlined"
-                  aria-label="empty textarea"
-                  placeholder="Message"
-                  style={{ width: 200, height: 50 }}
-                />
-                <Button
-                  justifySelf="right"
-                  variant="outlined"
-                  sx={{ alignSelf: "right", width: "70%" }}
-                >
-                  Send Message
-                </Button>
-              </Stack>
-            </FormControl>
+            <Stack spacing={2}>
+              <TextField
+                minWidth="50%"
+                type="text"
+                id="outlined-basic"
+                variant="outlined"
+                placeholder="Fullname"
+              />
+              <TextField
+                variant="outlined"
+                type="email"
+                placeholder="Email Address"
+              />
+
+              <TextareaAutosize
+                className="me__contact_us_input"
+                minRows={5}
+                placeholder="Message"
+              />
+
+              <Button
+                variant="outlined"
+                sx={{ alignSelf: "end", width: "70%" }}
+              >
+                Send Message
+              </Button>
+            </Stack>
           </Grid>
         </Grid>
       </Container>
