@@ -109,3 +109,11 @@ a {
     height: 2rem;
     background-color: #395a5c;
   }
+
+
+  @media screen and (max-width: 540px) {
+
+    .section__padding {
+      padding: 2rem 1rem;
+    }
+}

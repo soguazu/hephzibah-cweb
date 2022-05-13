@@ -122,6 +122,7 @@
     box-shadow: 0 0 5 rgba(0,0,0,0.2);
     z-index: 9999;
     backdrop-filter: blur(9px);
+    color: #eee;
 
 }
 

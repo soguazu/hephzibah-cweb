@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.2); 
+    background: rgba(0, 0, 0, 0.2); 
     width: 32%;
     backdrop-filter: blur(15px);
     padding: 2rem;
@@ -64,8 +64,91 @@
     background-color: var(--color-button-cta-hover);
 }
 
+@media screen and (max-width: 1280px) {
+
+    .me__header-content {
+        width: 40%;
+    }
+    .me__header-content h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .me__header-content p {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .me__header-content {
+        width: 40%;
+    }
+    .me__header-content h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .me__header-content p {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .me__header-content {
+        width: auto;
+        height: 50%;
+        align-self: flex-end;
+    }
+    .me__header-content h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .me__header-content p {
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .me__header-content h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .me__header-content p {
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .me__header-content h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
 
 @media screen and (max-width: 550px) {
+
+    .me__header-content {
+        width: auto;
+        backdrop-filter: blur(5px);
+        align-self: flex-end;
+
+    }
+    .me__header-content h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .me__header-content p {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
 
     .me__header-content {
         width: auto;
@@ -75,7 +158,38 @@
         line-height: 2rem;
     }
     .me__header-content p {
-        line-height: 2rem;
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 393px) {
+
+    .me__header-content h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .me__header-content p {
+        line-height: 1rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    .me__header-content h1 {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .me__header-content p {
+        line-height: 1rem;
+        font-size: 1rem;
+    }
+
+    .me__header-give button {
+        padding: 1rem 1rem;
         font-size: 1rem;
     }
 }
