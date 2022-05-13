@@ -9,6 +9,9 @@ const Header = () => {
           HEPHZIBAH WORD APOSTOLIC CENTER
         </h1>
         <p>Sending the word, healing the nations</p>
+        <div className='me__header-give'>
+            <button type='button'>Give</button>
+        </div>
       </div>
     </div>
   )

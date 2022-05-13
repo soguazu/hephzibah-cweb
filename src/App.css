@@ -50,7 +50,7 @@ a {
   }
   
   .section__padding {
-    padding: 4rem 6rem;
+    padding: 4rem 4rem;
   }
   
   .section__margin {
@@ -102,4 +102,10 @@ a {
     .section__margin {
       margin: 4rem 2rem;
     }  
+  }
+
+  .nav__header {
+    width: 100;
+    height: 2rem;
+    background-color: #395a5c;
   }

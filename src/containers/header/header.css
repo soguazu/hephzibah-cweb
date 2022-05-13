@@ -1,31 +1,80 @@
 .me__header {
+    background: url(../../assets/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: flex;
-    height: 70vh;
+    height: 75vh;
+    position: relative;
 }
 
 .me__header-content {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-
-    margin-right: 5rem;
+    background: rgba(255, 255, 255, 0.2); 
+    width: 35%;
+    backdrop-filter: blur(15px);
+    padding: 2rem;
 }
 
 .me__header-content h1 {
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 4rem;
-    line-height: 5rem;
+    line-height: 4rem;
     letter-spacing: .1em;
+    margin-bottom: 1rem;
 }
 
 .me__header-content p {
     font-family: var(--font-family-header);
-    color: #555;
+    color: #eee;
     font-weight: 800;
-    font-size: 2rem;
-    line-height: 5rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
     letter-spacing: .1em;
+    margin-bottom: 1.5rem;
+    align-self: center;
+}
+
+.me__header-give {
+    width: 100%
+}
+
+.me__header-give button {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    right: 10%;
+    border-radius: 5px;
+    background-color: var(--color-button-cta);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: var(--color-button);
+    line-height: 1.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.me__header-give button:hover {
+    background-color: var(--color-button-cta-hover);
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .me__header-content {
+        width: auto;
+    }
+    .me__header-content h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .me__header-content p {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
 }

@@ -19,8 +19,7 @@
 }
 
 .me__navbar-links_logo img {
-    width: 6rem;
-    /* height: 16px; */
+    width: 4rem;
 }
 
 .me__navbar-links_container {
@@ -54,6 +53,7 @@
     right: 10%;
     border-radius: 5px;
     background-color: var(--color-button-cta);
+    border-color: var(--color-button-cta);
     cursor: pointer;
     border: none;
     outline: none;
@@ -110,16 +110,19 @@
     flex-direction: column;
     text-align: end;
 
-    /* background-color: var(--color-footer); */
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 2rem;
 
     position: absolute;
     top: 60px;
     right: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
     min-width: 210px;
     border-radius: 5px;
     box-shadow: 0 0 5 rgba(0,0,0,0.2);
+    z-index: 9999;
+    backdrop-filter: blur(9px);
+
 }
 
 .me__navbar-menu_container p {
