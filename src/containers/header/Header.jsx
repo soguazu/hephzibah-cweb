@@ -8,7 +8,7 @@ const Header = () => {
         <h1 className='gradient__text'>
           HEPHZIBAH WORD APOSTOLIC CENTER
         </h1>
-        <p>Sending the word, healing the nations</p>
+        <p>Sending the word, healing the nations...</p>
         <div className='me__header-give'>
             <button type='button'>Contact us</button>
         </div>
