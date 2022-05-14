@@ -38,9 +38,23 @@ a {
 }
 
 .gradient__bg {
-  
+    position: relative;
+    z-index: 1;
     background: var(--color-bg)
   }
+
+  .curve__heroimage {
+    width: 100%;
+    position: absolute;
+    height: 10vh;
+   top: 83%;
+   z-index: 2;
+}
+
+.curve__heroimage img {
+  width: 100%;
+  height: 100%;
+}
   
   .gradient__text {
     background: var(--gradient-text);
@@ -60,6 +74,20 @@ a {
   .scale-up-center {
       -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
       animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  .nav__header {
+    width: 100%;
+    height: 2rem;
+    background-color: var(--color-banner);
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-family: var(--font-family-header);
   }
   
   @-webkit-keyframes scale-up-center {
@@ -83,6 +111,18 @@ a {
               transform: scale(1);
     }
   }
+
+  @media screen and (max-width: 1284px) {
+    .curve__heroimage {
+      top: 88%;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    .curve__heroimage {
+      top: 80%;
+    }
+  }
   
   @media screen and (max-width: 700px) {
     .section__padding {
@@ -104,16 +144,35 @@ a {
     }  
   }
 
-  .nav__header {
-    width: 100;
-    height: 2rem;
-    background-color: #395a5c;
-  }
 
 
-  @media screen and (max-width: 540px) {
+
+@media screen and (max-width: 540px) {
 
     .section__padding {
       padding: 2rem 1rem;
     }
+
+    .curve__heroimage {
+      top: 90%;
+    }
 }
+
+
+@media screen and (max-width: 375px) {
+
+  .curve__heroimage {
+    top: 95%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .curve__heroimage {
+    top: 93%;
+  }
+}
+
+
+
+

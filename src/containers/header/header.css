@@ -41,7 +41,8 @@
 }
 
 .me__header-give {
-    width: 100%
+    width: 100%;
+    text-align: center;
 }
 
 .me__header-give button {
@@ -58,6 +59,7 @@
     width: 100%;
     font-size: 1.2rem;
     letter-spacing: 4px;
+    
 }
 
 .me__header-give button:hover {
@@ -175,6 +177,11 @@
         font-size: 1rem;
     }
 
+    .me__header-give button {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 280px) {
@@ -185,11 +192,6 @@
     }
     .me__header-content p {
         line-height: 1rem;
-        font-size: 1rem;
-    }
-
-    .me__header-give button {
-        padding: 1rem 1rem;
         font-size: 1rem;
     }
 }
