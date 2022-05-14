@@ -24,10 +24,6 @@
     text-rendering: optimizeLegibility;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  padding: 0;
-  margin: 0;
-}
 
 .App {
     width: 100%;
@@ -93,6 +89,7 @@ a {
     word-spacing: 10px;
     text-transform: uppercase;
     font-family: var(--font-family-header);
+    font-size: .2rem;
   }
   
   @-webkit-keyframes scale-up-center {
@@ -119,13 +116,19 @@ a {
 
   @media screen and (max-width: 1284px) {
     .curve__heroimage {
-      top: 88%;
+      top: 110%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .curve__heroimage {
+      top: 115%;
     }
   }
 
   @media screen and (max-width: 920px) {
     .curve__heroimage {
-      top: 80%;
+      top: 105%;
     }
   }
   
@@ -159,23 +162,27 @@ a {
     }
 
     .curve__heroimage {
-      top: 90%;
+      top: 115%;
     }
+}
+
+@media screen and (max-width: 414px) {
+
+  .curve__heroimage {
+    top: 110%;
+  }
 }
 
 
 @media screen and (max-width: 375px) {
 
   .curve__heroimage {
-    top: 95%;
+    top: 115%;
   }
 }
 
 @media screen and (max-width: 360px) {
 
-  .curve__heroimage {
-    top: 93%;
-  }
 }
 
 
